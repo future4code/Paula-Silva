@@ -1,0 +1,134 @@
+    1  pwd
+    2  cd d:/
+    3  pwd
+    4  cd Documents/Labenu/
+    5  ls
+    6  cd assassinato-na-linha-de-comando/
+    7  ls
+    8  cat README.md 
+    9  cat inicio 
+   10  cd misterio/
+   11  ls
+   12  grep PISTA cena-do-crime 
+   13  cat pessoas 
+   14  grep PISTA cena-do-crime 
+   15  grep Annabel pessoas 
+   16  head pessoas 
+   17  head -20 pessoas 
+   18  cd ruas
+   19  ls
+   20  head Vila_Hart 
+   21  grep 40 Vila_Hart 
+   22  head -40 Vila_Hart 
+   23  cd ..
+   24  ls
+   25  cd entre
+   26  cd entrevistas/
+   27  head #47246024
+   28  cat #47246024
+   29  ls
+   30  cat entrevista-47246024
+   31  cd ..
+   32  ls
+   33  grep Annabel pessoas 
+   34  cd ruas
+   35  head -179 Vila_Buckingham 
+   36  cd ../entrevistas/
+   37  cat entrevista-699607
+   38  d ..
+   39  cd ..
+   40  ls
+   41  grep L337 automoveis 
+   42  head automoveis 
+   43  grep -A 4 L337 automoveis 
+   44  man eco
+   45  ls
+   46  cat cena-do-crime 
+   47  grep PISTA cena-do-crime 
+   48  grep -A 5 PISTA cena-do-crime 
+   49  grep -B 5 PISTA cena-do-crime 
+   50  grep -A 10 -B 10 PISTA cena-do-crime 
+   51  grep PISTA cena-do-crime 
+   52  grep -A 5 L337 automoveis 
+   53  grep -A 6 L337 automoveis 
+   54  ls
+   55  cd ass
+   56  cd associacoes/
+   57  ls
+   58  cat entrevista-699607
+   59  cat ../entrevistas/entrevista-699607
+   60  grep PISTA ../cena-do-crime
+   61  Joe Germuska
+   62  grep Joe Germuska
+   63  grep Joe Germuska AAA
+   64  grep 'Joe Germuska' AAA
+   65  cd ..
+   66  grep 'Joe Germuska' associacoes/
+   67  ls
+   68  cd ..
+   69  ls
+   70  cat README.md 
+   71  man grep
+   72  healp grep
+   73  help grep
+   74  man -k grep
+   75  info grep
+   76  cd misterio
+   77  ls
+   78  cat ../inicio 
+   79  grep PISTA cena-do-crime
+   80  cd asso
+   81  cd associacoes/
+   82  ls
+   83  grep 'Joe Germuska' 
+   84  grep -d 'Joe Germuska' 
+   85  grep -recurse 'Joe Germuska' 
+   86  cd ..
+   87  grep -recurse associacoes/ 'Joe Germuska' 
+   88  cd associacoes/
+   89  grep PISTA cena-do-crime
+   90  cd ..
+   91  grep PISTA cena-do-crime
+   92  ls
+   93  grep -A 6 L337 automoveis 
+   94  grep PISTA cena-do-crime
+   95  grep 'Joe Germuska' associacoes/AAA
+   96  grep -A 3 -B 3 'Joe Germuska' associacoes/AAA
+   97  grep 'Joe Germuska' associacoes/Delta_SkyMiles 
+   98  grep 'Jeremy Bowers' associacoes/AAA
+   99  grep 'Jeremy Bowers' associacoes/Delta_SkyMiles 
+  100  grep 'Jeremy Bowers' associacoes/Biblioteca_da_Cidade 
+  101  grep 'Jeremy Bowers' associacoes/Museu_da_HistÃ³ria_do_Bash 
+  102  grep 'Jacqui Maher' pessoas 
+  103  grep 'Jeremy' pessoas 
+  104  grep 'Joe' pessoas 
+  105  line
+  106  head -284 ruas/Travessa_Dunstable 
+  107  cat entrevistas/entrevista-9620713
+  108  ls
+  109  grep PISTA cena-do-crime
+  110  grep -A 6 L337 automoveis 
+  111  grep -A 10 L337 automoveis 
+  112  grep -A 6 L337 automoveis 
+  113  echo
+  114  history
+  115  echo --help
+  116  help echo
+  117  help history
+  118  history > hist.txt
+  119  ls
+  120  heas hist.txt 
+  121  head hist.txt 
+  122  grep 'Joe Germusa' pessoas 
+  123  grep 'Joe Germuska' pessoas 
+  124  head -275 ruas/Rua_Plainfield 
+  125  cat entrevistas/entrevista-29741223
+  126  grep -A 6 L337 automoveis 
+  127  grep -A - -B 3 'Jeremy Bowers' automoveis 
+  128  grep -A 3 -B 3 'Jeremy Bowers' automoveis 
+  129  echo grep -A 3 -B 3 'Jeremy Bowers' automoveis >>culpado.txt
+  130  cat culpado.txt 
+  131  grep -A 3 -B 3 'Jeremy Bowers' automoveis >>culpado.txt 
+  132  cat culpado.txt 
+  133  ls
+  134  history >hist.txt 
