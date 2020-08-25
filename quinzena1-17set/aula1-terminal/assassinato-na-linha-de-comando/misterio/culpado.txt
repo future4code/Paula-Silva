@@ -1,0 +1,8 @@
+grep -A 3 -B 3 Jeremy Bowers automoveis
+Placa L3375A9
+Marca: Honda
+Cor: Azul
+Proprietário: Jeremy Bowers
+Altura: 1,86 m
+Peso: 92,5 kg
+
