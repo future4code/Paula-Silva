@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+header, footer {
+    background-color: #B8B015;
+    text-align: center;
+    padding: 20px;
+}
+.menu, a {
+    background-color: #78730D;
+    color: seashell;
+    padding: 5px;
+    text-align: center;
+}
+#centro {
+    text-align: center;
+    padding: 10px;
+
+}
+#centro > img {
+    width: 70%;
+
+}
+.content {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
