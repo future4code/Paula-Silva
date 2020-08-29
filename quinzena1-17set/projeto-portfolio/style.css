@@ -45,8 +45,8 @@ body {
     margin: 10px;
 }
 #links img {
+    padding-top: 10px;
     width: 10%;
-
 }
 .content {
     margin-left: 30%;
@@ -60,13 +60,17 @@ body {
     width: 100%;
     margin-top: 30%;
     margin-bottom: 10%;
+    border-radius: 10px;
 }
 .titulo {
     font-style: italic;
     font-weight: bold;
+    margin-left: 2%;
+    padding-left: 8px;
+    list-style-type: "\2615";
 }
 .descricao {
-    margin-left: 20px;
+    margin-left: 24px;
     padding: 10px;
     text-align: justify;
     font-weight: lighter;
@@ -78,10 +82,16 @@ body {
 }
 label {
     display: block;
-
+}
+input, button {
+    border-radius: 5px;
+    color: #7F332A;
+    font-weight: bold;
+    padding: 5px;
 }
 form {
-    margin-bottom: 20px;
+    margin-bottom: 10%;
+    margin-left: 10%;
 }
 .barra {
     background-color: #FF6554;
@@ -104,6 +114,5 @@ header {
     margin-top: 35px;
     margin-bottom: 10px;
     text-align: justify;
-    position: fixed;
-    
+    position: fixed;    
 }
