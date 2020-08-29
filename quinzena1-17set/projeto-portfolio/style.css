@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+body {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #F5E7DF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fixo {
+    background-color: #B3473B;
+    color: seashell;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    box-shadow: #7F332A 10px 10px 10px ;
+}
+.fixo > a {
+    color: seashell;
+    text-decoration: none;
+}
+#meunome{
+    font-size: 5em;
+    transform: rotate(270deg);
+    padding-right: 130px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#cargo {
+    font-size: 2em;
+}
+#minhafoto {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#quemsou {
+    font-size: 0.8em;
+    margin: 10px;
+}
+#links img {
+    width: 10%;
+}
+.content {
+    margin-left: 30%;
+}
