@@ -27,9 +27,9 @@ button:focus {
     color: white;
 }
 
-/*img {
-    width: 100px;
-}*/
+img:hover {
+    opacity: 50%;
+}
 
 div>p:first-child {
     display: inline;
