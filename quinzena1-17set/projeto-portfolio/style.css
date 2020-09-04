@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+}
+body {
+    width: 80%;
+    min-height: 100vh;
+    margin-left: 10%;
+    background-color: #F5E7DF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fixo {
+    background-color: #B3473B;
+    color: seashell;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 95%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    box-shadow: #7F332A 10px 10px 10px ;
+}
+.fixo > a {
+    color: seashell;
+    text-decoration: none;
+}
+#meunome{
+    font-size: 5em;
+    transform: rotate(270deg);
+    padding-right: 130px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#cargo {
+    font-size: 2em;
+}
+#minhafoto {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;    
+}
+#quemsou {
+    font-size: 0.8em;
+    margin: 10px;
+}
+#links img {
+    padding-top: 10px;
+    width: 10%;
+}
+.content {
+    margin-left: 30%;
+}
+.content h2, .topico {
+    color: #7F332A;
+    padding: 10px;
+    list-style-type: none;
+}
+.content img {
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+.titulo {
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 2%;
+    padding-left: 8px;
+    list-style-type: "\2615";
+}
+.descricao {
+    margin-left: 24px;
+    padding: 10px;
+    text-align: justify;
+    font-weight: lighter;
+    width: 90%
+}
+.content a {
+    color: #7F332A;
+    text-decoration: none;
+}
+label {
+    display: block;
+}
+input, button {
+    border-radius: 5px;
+    color: #7F332A;
+    font-weight: bold;
+    padding: 5px;
+}
+form {
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+.barra {
+    background-color: #FF6554;
+    color: #FF6554;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 115%;
+    height: 25%;
+    margin-left: -5%;
+    border-radius: 10px;
+    opacity: 80%;
+    position: fixed;
+    box-shadow: #B3473B 10px 10px 10px ;
+}
+header {    
+    width: 60%;
+    color: seashell;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: justify;
+    position: fixed;    
+}
