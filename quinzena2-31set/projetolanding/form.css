@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai', sans-serif;
+}
+main {
+    display: flex;
+    height: 100vh;   
+}
+#contato-texto {
+    padding: 10vw;
+    background-color: #1F1F24;
+    color: #D2C2B0;
+    font-size: 2rem;
+    width: 50%;
+
+}
+img {
+    width: 50%
+}
+img:hover, button:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+p {
+    font-size: 1.5rem;
+}
+#contato-form {    
+    margin: auto 10%;
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+}
+input, select, option, textarea {
+    font-size: 1.2em;
+    padding: 1vh;
+    width: 100%;
+}
+label {
+    display: block;
+}
+button {
+    background-color: transparent;
+    color: #2F2F37;
+    font-size: 1.2em;
+    border: 2px solid #2F2F37;
+    border-radius: 15px;
+    padding: 1vh;    
+}
