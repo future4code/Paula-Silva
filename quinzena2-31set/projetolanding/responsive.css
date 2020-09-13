@@ -1,3 +1,5 @@
+/*---------ESTILIZAÇÃO RESPONSIVA TABLETS-----------*/
+
 @media screen and (max-width: 800px) {
 nav {
     font-size: 1.1em;
@@ -68,10 +70,10 @@ footer div {
     width: 10vw;
 }
 }
-
+/*---------ESTILIZAÇÃO RESPONSIVA CELULARES-----------*/
 @media screen and (max-width: 500px) {
     nav {
-        font-size: 0.8em;
+        font-size: 0.7em;
         font-weight: 300;
     }
     #logo {
@@ -79,13 +81,14 @@ footer div {
     }
     ul {
         width: 60vw;
+        
     }
     h1 {
-        padding: 1vh;
+        padding: 1vw;
         font-size: 1.2em;
     }
     p {
-        padding: 1vh;
+        padding: 1vw;
         font-size: 1em;
     }
     #banners p, h1 {    
