@@ -95,7 +95,7 @@ button {
     background-color: #D2C2B0;
     border-radius: 1em;
     display: flex;
-    margin: 1vh;
+    margin: 2vh;
     flex-direction: column;
     justify-content: space-between;
     transition: transform .2s;
@@ -103,6 +103,7 @@ button {
 .case img {
     width: 90%;
     margin: 0 auto;
+
 }
 .case:hover {
     transform: scale(1.05);
@@ -158,10 +159,10 @@ footer div {
     justify-content: center;
     align-items: flex-end;
 }
-footer img {
-    height: 10vh;
-}
-footer img:hover {
+footer div:hover {
 transform: scale(1.1);
 transition: transform .2s;
+}
+footer img {
+    height: 10vh;
 }
