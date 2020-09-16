@@ -1,0 +1,121 @@
+/*---------ESTILIZAÇÃO RESPONSIVA TABLETS-----------*/
+
+@media screen and (max-width: 800px) {
+nav {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+#logo {
+    width: 30vw;
+}
+ul {
+    width: 60vw;
+}
+h1 {
+    padding: 1vh;
+    font-size: 1.2em;
+}
+p {
+    padding: 1vh;
+    font-size: 1em;
+}
+#banners p, h1 {    
+    width: 60%; 
+}
+button {
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 1vh;
+    margin: 1vh;
+    max-width: 50vw;
+}
+.banner {
+    width: 90vw;
+}
+#banner1{
+    background-image: url(./img/banner1.png);
+    background-size: 60vw;
+    background-position: right bottom;
+}
+#banner2{
+    background-image: url(./img/banner2e.png);
+    background-size: 60vw;
+    background-position: right bottom;    
+}
+.direita {
+    margin-left:1vw; 
+}
+#banner3 {
+    background-image: url(./img/banner3.png);
+    background-size: 60vw;
+    background-position: right bottom;  
+}
+#mapa {
+    width: 60vw;
+}
+#quemsomos {
+    padding: 1vw 4vw;
+    background-color: #AD9171;
+    border-radius: 15px;
+    opacity: 80%;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 2%;
+    width: 50vw;
+}
+footer h1 {
+    width: 30vh;
+}
+footer div {
+    width: 10vw;
+}
+}
+/*---------ESTILIZAÇÃO RESPONSIVA CELULARES-----------*/
+@media screen and (max-width: 500px) {
+    nav {
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    #logo {
+        width: 30vw;
+    }
+    ul {
+        width: 60vw;
+        
+    }
+    h1 {
+        padding: 1vw;
+        font-size: 1.2em;
+    }
+    p {
+        padding: 1vw;
+        font-size: 1em;
+    }
+    #banners p, h1 {    
+        width: 100%; 
+    }
+    button {
+        max-width: 40vw;
+    }
+    .banner {
+        width: 80vw;
+    }
+    #cases {
+        flex-direction: column;
+    }
+        
+    #infos {
+        padding: 4vw;
+        background-color:  #D2C2B0;
+        display: flex;
+    }
+    #onde-estamos h2 {
+        font-size: 1.2em;
+    } 
+    footer div {
+        height: 12vh;
+    }
+    footer img {
+        height: 8vw;
+    }
+    }

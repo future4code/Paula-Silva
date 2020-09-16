@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpFour -  Empréstimo pra quem precisa</title>
+    <link rel="stylesheet" href="form.css">
+    <base target="_blank">
+</head>
+<body>
+<main role="main">
+    <section id="contato-texto">
+        <a href="./index.html" target="_self"><img src="./img/logo.png" alt="Home"></a>
+        <h1>Vamos Conversar</h1>
+        <p>Escolha no formulário o motivo do seu contato e entraremos em contato</p>
+    </section>
+    <section id="contato-form">
+        <form action="">
+            <label for="nome">Seu Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="email">Seu E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="telefone">Sem Telefone com DDD</label>
+            <input type="number" name="telefone" id="telefone">
+            <label for="motivo">Qual o motivo do seu contato?</label>
+            <select name="motivo" id="motivo">
+                <option value="" disabled selected>Escolha o motivo do seu contato</option>
+                <option value="1">Simular Crédito Pessoal</option>
+                <option value="2">Sistema de Controle Financeiro</option>
+                <option value="3">Aconselhamento Financeiro</option>
+                <option value="4">Trabalhe Conosco</option>
+                <option value="5">Outros</option>
+            </select>
+            <label for="mensagem">Sua Mensagem aqui:</label>
+            <textarea name="mensagem" id="mensagem"cols="30" rows="2"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+    
+</body>
+</html>
