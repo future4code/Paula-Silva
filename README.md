@@ -1,19 +1,18 @@
-Alunos(as), sejam bem-vindos(as)!
+Repositório das atividades do Curso de Front-end - Paula Soares
 
-Esse repositório vai acompanhar vocês até o final do curso, para mantermos a organização, sugerimos que vocês sigam a seguinte estrutura:
-
+Turma Tang
 ```
 .
-├── quinzena-1
-│   ├── aula1
-│   ├── aula2
-│   ├── aula3
-│   ├── aula4
-│   └── projeto-nome
+├── quinzena-1 - 17set2020
+│   ├── aula1 - Terminal
+│   ├── aula2 - HTML
+│   ├── aula3 - Git
+│   ├── aula4 - CSS
+│   └── projeto- Portfólio
 |
-├── quinzena-2
-│   ├── aula5
-│   ├── aula6
+├── quinzena-2 - 31set2020
+│   ├── aula5 - Debbuging
+│   ├── aula6 - Flex e Grid
 │   ├── aula7
 │   ├── aula8
 │   └── projeto-nome
@@ -34,4 +33,5 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 |
 ```
 
-Uma pasta para cada semana, dentro delas uma pasta para cada dia de aula e por fim uma pasta para o projeto da semana.
+"Trabalhe até seus vizinhos dizerem: 'Nam! Fulano só pode tá roubando!'"
+;)
