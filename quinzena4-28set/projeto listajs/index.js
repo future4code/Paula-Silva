@@ -15,15 +15,16 @@
 //1.
 const array = [10,20,30,40,50,60,70,80,90,100]
 // ver aula de laços
-// for (const iterator of object) {
+for (const a of array) {
+    console.log(a);    
+}
+let i = 0
+while (i<10){
+    console.log(array[i]);    
+    i++;
+}
+
+for (let index = 0; index < array.length; index++) {
+    console.log(array[index]);
     
-// }
-
-// while {
-
-// }
-
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-    
-// }
+}
