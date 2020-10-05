@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 0.9em;
+    display: grid;
+    grid-template: 1fr 5fr;
 }
 
 header {
-    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +14,9 @@ header {
 
 section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 90vh;
+    /*height: 90vh;*/
 }
 
 .semana {
@@ -23,6 +24,7 @@ section {
     width: 14%;
     padding: 5px;
     height: fit-content;
+    flex: 1 1 150px;
 }
 
 .horas {

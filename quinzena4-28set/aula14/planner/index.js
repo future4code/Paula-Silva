@@ -27,7 +27,7 @@ function criaTarefa() {
     if (tarefa==="") {
         alert("Vc não digitou sua tarefa");
     } else {
-        //se tem texto, dentro da div do dia, vai pegar a hora escolhido e dentro dela adicionar a tarefa
+        //se tem texto no input, dentro da div do dia, vai pegar a hora escolhida e dentro dela adicionar a tarefa pronta pra ser riscada
         container.getElementsByClassName(hora)[0].innerHTML += `<p onclick="risca(this)" class="tarefa">${tarefa}</p>`
     }
     //apaga depois de inserir
@@ -41,6 +41,6 @@ function risca(item) {
 function limpaTarefa() {
     let tarefas = document.getElementsByClassName('tarefa')
     for (const e of tarefas) {
-        e.innerHTML = '';
+    e.remove();
     }
 }
