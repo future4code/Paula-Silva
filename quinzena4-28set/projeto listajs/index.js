@@ -143,10 +143,53 @@
 
 //Exercicios de Funções de Array
 //1.
-const pessoas = [
-	{ nome: "Pedro", idade: 20 },
-	{ nome: "João", idade: 10 },
-	{ nome: "Paula", idade: 12 },
-	{ nome: "Artur", idade: 89 } 
-]
+// const pessoas = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
 //a.
+// const adultos = pessoas.filter(
+//     (p) => {
+//        return p.idade >=20; 
+//     }
+// )
+
+// console.log(adultos);
+//b.
+// const criancas = pessoas.filter(
+//     (p) => {
+//         return p.idade < 20
+//     }
+// )
+
+// console.log(criancas);
+
+//2.
+const array = [1, 2, 3, 4, 5, 6]
+//a.
+// const vezes2 = array.map(
+//     (num) => {
+//         return num*2
+//     }
+// ) 
+// console.log(vezes2);
+
+//b.
+// const vezes3 = array.map(
+//     (num) => {
+//         return JSON.stringify(num*3)
+//     }
+// )
+// console.log(vezes3);
+
+//c.
+// const parImpar = array.map(
+//     (num) => {
+//         return `${num} é ${(num%2===0? "par" : "ímpar")}`
+//     }
+// )
+// console.log(parImpar);
+
+//3.
