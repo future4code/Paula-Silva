@@ -64,3 +64,89 @@
 // maiorDeDois(15,30);
 
 //Exercícios de Funções
+//1.
+// const array = [10,20,30,40,50,60,70,80,90,100]
+// function segundoMenorMaior (array) {
+//     let maior = Number.MIN_VALUE, 
+//         auxMaior = Number.MIN_VALUE,
+//         menor = Number.MAX_VALUE, 
+//         auxMenor = Number.MAX_VALUE;
+//     for (const a of array) {
+//         if (a > auxMaior) {
+//             if (a > maior) {
+//                 auxMaior = maior
+//                 maior = a
+//             } else {
+//                 auxMaior = a
+//             }
+//         }
+//         if (a < auxMenor) { 
+//             if (a < menor) {
+//                 auxMenor = menor
+//                 menor = a
+//             } else {
+//                 auxMenor = a
+//             }
+//         }       
+//     }
+//     console.log("2º Menor: ", auxMenor, "\n2º Maior: ", auxMaior);
+// }
+
+// segundoMenorMaior(array)
+
+//2.
+// const alerta = () => {
+//     alert("Hello, Stranger!")
+// }
+// alerta()
+
+//Exercícios de Objetos
+//1. Array é uma coleção de dados quaisquer. Objeto é um modelo de dados complexo mais próximo da realidade. 
+
+//2.
+// function criaRetangulo(l1, l2) {
+//     return retangulo = {
+//         largura : l1,
+//         altura : l2,
+//         perimetro: 2*(l1+l2),
+//         area : l1*l2
+//     }
+// }
+
+// console.log(criaRetangulo(2,3)); 
+
+//3. 
+// const filme = {
+//     titulo: "Avatar",
+//     ano: 2009,
+//     diretor: "James Cameron",
+//     elenco: ["Sam Worthington", "Zoe Saldaña"]
+// }
+
+// console.log("Venha assistir ao filme " + filme.titulo + " de " + filme.ano + " dirigido por " + filme.diretor + " e estrelado por " + filme.elenco)
+
+//4.
+// const pessoa = {
+//     nome: "Zezin",
+//     idade: 21,
+//     email: "ze@pilinta.com",
+//     endereco: "nemdigo,66"
+// }
+
+// const anonimizarPessoa = (pessoa) => {
+//     return {...pessoa, nome : "ANÔNIMO"}
+// }
+
+// const novaPessoa = anonimizarPessoa(pessoa)
+
+// console.log(pessoa, novaPessoa);
+
+//Exercicios de Funções de Array
+//1.
+const pessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+//a.
