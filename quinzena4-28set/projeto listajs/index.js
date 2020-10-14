@@ -167,7 +167,7 @@
 // console.log(criancas);
 
 //2.
-const array = [1, 2, 3, 4, 5, 6]
+//const array = [1, 2, 3, 4, 5, 6]
 //a.
 // const vezes2 = array.map(
 //     (num) => {
@@ -193,3 +193,70 @@ const array = [1, 2, 3, 4, 5, 6]
 // console.log(parImpar);
 
 //3.
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+//a.
+// const montanhaRussa = pessoas.filter(
+//     (p) => {
+//         return (p.altura >= 1.5 && p.idade > 14 && p.idade < 60)
+//     }
+// )
+// console.log(montanhaRussa);
+//b.
+// const noMontanhaRussa = pessoas.filter(
+//     (p) => {
+//         return !(p.altura >= 1.5 && p.idade > 14 && p.idade < 60)
+//     }
+// )
+// console.log(noMontanhaRussa);
+
+//4.
+// const consultas = [
+//     { nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+//     { nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+//     { nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+//     { nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
+// const emails = []
+
+// consultas.forEach(p => {
+//     if (p.cancelada) {
+//         emails.push({
+//             ...p,
+//             email: `Olá, ${p.genero === 'masculino' ? 'Sr.' : 'Sra.'} ${p.nome}. Infelizmente, sua consulta marcada para o dia ${p.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`
+//         })
+//     } else {
+//         emails.push({
+//             ...p,
+//             email: `Olá, ${p.genero === 'masculino' ? 'Sr.' : 'Sra.'} ${p.nome}. Estamos enviando esta mensagem para ${p.genero == 'masculino' ? 'lembrá-lo' : 'lembrá-la'} da sua consulta no dia ${p.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`
+//         })
+//     }
+// })
+
+// console.log(emails);
+
+//5.
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
+contas.forEach( c => {
+    let descontos = 0
+    for (let i = 0; i < c.compras.length; i++) {
+        descontos += c.compras[i];        
+    }
+    c.saldoTotal = c.saldoTotal - descontos
+})
+
+console.log(contas);
