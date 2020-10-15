@@ -26,13 +26,13 @@ Turma Tang
 |
 ├── quinzena-4 - 28set2020
 │   ├── aula13 - Funções 
-│   ├── aula14
-│   ├── aula15
-│   ├── aula16
-│   └── projeto-nome
+│   ├── aula14 - DOM
+│   ├── aula15 - Objetos
+│   ├── aula16 - Callbacks e Funções de Array
+│   └── projeto- Lista de Exercícios Javascript
 |
-├── quinzena-5 - 
-│   ├── aula17 -  
+├── quinzena-5 - 12out2020
+│   ├── aula17 - Introdução do React e JSX
 │   ├── aula18 - 
 │   ├── aula19 - 
 │   ├── aula20 -
