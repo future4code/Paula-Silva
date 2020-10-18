@@ -1,0 +1,22 @@
+.littlecard-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.littlecard-container > img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.littlecard-container h4, .littlecard-container p {
+    display: inline;
+    margin-right: 5px;
+}
+
+.littlecard-container > div {
+    display: flex;
+    justify-items: flex-start;
+}
