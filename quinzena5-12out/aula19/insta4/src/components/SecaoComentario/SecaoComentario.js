@@ -3,7 +3,8 @@ import './SecaoComentario.css'
 
 export class SecaoComentario extends Component {
 	state = {
-		comentario : ""
+		comentario : "",
+		comentarios: []
 	}
 
 	onChangeComentario = (event) => {
@@ -22,6 +23,9 @@ export class SecaoComentario extends Component {
 				onChange={this.onChangeComentario}
 			/>
 			<button onClick={this.props.aoEnviar}>Enviar</button>
+			<div className="comentarios">
+
+			</div>
 		</div>
 	}
 }
