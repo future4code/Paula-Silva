@@ -1,6 +1,10 @@
 import React from "react"
+import axios from "axios"
 import { AddListContainer, AddListHeader, AddListTitle, AddListBody } from "./styled"
 import { Icon, Input, Button } from "../../styled"
+
+import { baseURL, axiosConfig } from "../../constants"
+
 
 
 export default class AddList extends React.Component {
@@ -15,10 +19,22 @@ export default class AddList extends React.Component {
     }
 
     saveNewPlaylist = () => {
-        !this.state.iptName&&alert('Digite um nome para sua playlist')
-        //vai dentro do then do axios
-        console.log(this.state.iptName);
-        this.props.close();
+        if (this.state.iptName) {
+            const requestBody = {
+                name: this.state.iptName
+            }
+            axios.post(baseURL, requestBody, axiosConfig)
+                .then(message => {
+                    console.log(message.status);
+                    alert('Playlist incluída com sucesso')
+                    this.props.close();
+                }).catch(error => {
+                    console.log(error);
+                    alert('Já existe uma playlist com esse nome. Escolha outro')
+                })
+        } else {
+            alert('Digite um nome para sua playlist')
+        }
     }
 
     render() {

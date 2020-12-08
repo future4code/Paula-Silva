@@ -1,11 +1,11 @@
 import React from "react"
+import axios from "axios"
 //Styled Components
-import {Container, MainTitle, AppContainer, Overlay} from './styled'
+import { Container, MainTitle, AppContainer, Overlay } from './styled'
 
 //icones
-import plus from "./img/plus-circle-solid.svg";
 import close from "./img/cancel.svg";
-import play from "./img/play-circle-solid.svg";
+import RadioRoundedIcon from '@material-ui/icons/RadioRounded';
 
 //Components
 import List from "./components/List/List"
@@ -14,10 +14,18 @@ import Player from "./components/Player/Player"
 import AddList from "./components/AddList/AddList"
 import AddMusic from "./components/AddMusic/AddMusic"
 
+//Constantes
+import { baseURL, axiosConfig } from "./constants"
+
+
 class App extends React.Component {
   state = {
-    mostraPlaylist: true,
-    mostraPlayer: false,
+    showFramePlaylist: false,
+    tracks: [],
+    playlistName: "",
+    playlistId: "",
+    showFramePlayer: false,
+    nowPlaying: "",
     overlay: false
   }
   loadForm = <></>
@@ -33,7 +41,7 @@ class App extends React.Component {
     this.setState({
       overlay: !this.state.overlay
     })
-    this.loadForm = <AddMusic icon={close} close={this.closeOverlay} />
+    this.loadForm = <AddMusic icon={close} close={this.closeOverlay} id={this.state.playlistId}/>
   }
 
   closeOverlay = () => {
@@ -42,32 +50,59 @@ class App extends React.Component {
     })
   }
 
-  showPlaylist = () => {
+  showPlaylist = (args) => {
     this.setState({
-      mostraPlaylist: true
+      showFramePlaylist: true
     })
+    axios.get(`${baseURL}/${args[0]}/tracks`, axiosConfig)
+      .then(response => {
+        this.setState({
+          tracks: response.data.result.tracks,
+          playlistName: args[1],
+          playlistId: args[0]
+        })
+      })
+      .catch(error => {
+        console.log(error);
+      })
   }
 
   closePlaylist = () => {
     this.setState({
-      mostraPlaylist: false
+      showFramePlaylist: false,
+      showFramePlayer: false
     })
   }
 
+  showPlayer = (id) => {
+    this.setState({
+      showFramePlayer: true
+    })
+    const nowPlaying = this.state.tracks.find(music => { return music.id === id })
+    this.setState({
+      nowPlaying: nowPlaying
+    })
+  }
+  closePlayer = () => {
+    this.setState({
+      showFramePlayer: false,
+      nowPlaying: ""
+    })
+  }
   render() {
 
     return (
       <Container>
-        <MainTitle>Bem-vind@ ao Labefy!</MainTitle>
+        <MainTitle>Bem-vind@ ao Labefy!<RadioRoundedIcon /></MainTitle>
         <AppContainer>
 
-          <List plus={plus} close={close} play={play} add={this.onclickAddPlaylist} show={this.showPlaylist}/>
+          <List add={this.onclickAddPlaylist} show={this.showPlaylist} />
 
-          {this.state.mostraPlaylist &&
-            <Playlist plus={plus} close={close} add={this.onclickAddMusic} closeFunction={this.closePlaylist}/>}
+          {this.state.showFramePlaylist &&
+            <Playlist tracks={this.state.tracks} name={this.state.playlistName} playlistId={this.state.playlistId} show={this.showPlaylist} add={this.onclickAddMusic} play={this.showPlayer} close={this.closePlaylist} />}
 
-          {this.state.mostraPlayer &&
-            <Player music={"Music playing"} />}
+          {this.state.showFramePlayer &&
+            <Player music={this.state.nowPlaying} close={this.closePlayer} />}
 
           {this.state.overlay &&
             <Overlay>

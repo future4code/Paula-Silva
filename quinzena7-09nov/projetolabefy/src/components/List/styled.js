@@ -7,6 +7,7 @@ min-height: 30vh;
 
 `
 export const ListHeader = styled.div`
+height: 70px;
 display: flex;
 justify-content: space-between;
 align-items: center;

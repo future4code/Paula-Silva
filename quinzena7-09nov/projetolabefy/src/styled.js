@@ -18,7 +18,7 @@ padding: 20px;
 export const AppContainer = styled.div`
 padding: 20px;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 flex-wrap: wrap;
 `
 
